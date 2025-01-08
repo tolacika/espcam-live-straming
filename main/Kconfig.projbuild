@@ -1,0 +1,22 @@
+menu "Application WiFi settings"
+
+    config WIFI_SSID
+        string "WiFi SSID"
+        default "my_wifi"
+        help
+            SSID of the WiFi network to connect to
+
+    config WIFI_PASSWORD
+        string "WiFi password"
+        default "my_password"
+        help
+            Password of the WiFi network to connect to
+endmenu
+menu "Application Websocket settings"
+
+    config WEBSOCKET_URL
+        string "WebSocket URL"
+        default "ws://192.168.0.10:8080"
+
+endmenu
+
